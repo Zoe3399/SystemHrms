@@ -28,7 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,16 +36,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Custom Apps
-    'hrms_project.users',
-    'hrms_project.departments',
-    'hrms_project.positions',
-    'hrms_project.leaves',
-    'hrms_project.resignations',
-    'hrms_project.activity_logs',
-    'hrms_project.notifications',
-    'hrms_project.menus',
-    'hrms_project.permissions',
-    'hrms_project.settings',
+    'users',
+    'departments',
+    'positions',
+    'leaves',
+    'resignations',
+    'activity_logs',
+    'notifications',
+    'menus',
+    'permissions',
+    'settings',
 ]
 
 MIDDLEWARE = [
