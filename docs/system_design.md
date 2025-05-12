@@ -31,17 +31,17 @@
 <details>
 <summary>3. 컴포넌트 설계</summary>
 
-#### 3.1 웹 서버 (Django)
+#### 1. 웹 서버 (Django)
 - URL 라우팅 및 뷰(View) 정의
 - 모델-뷰-컨트롤러 패턴 기반
 - DRF를 통해 JSON API 제공
 
-#### 3.2 프론트엔드 (React)
+#### 2. 프론트엔드 (React)
 - 컴포넌트 단위 재사용성 확보
 - 전역 상태 관리는 Redux 또는 Context API
 - 라우팅: React Router
 
-#### 3.3 데이터베이스 (MySQL)
+#### 3. 데이터베이스 (MySQL)
 - 관계형 모델링
 - 주요 테이블: Employee, Department, Attendance, Leave, Payroll, UserRole
 - 인덱스 및 외래 키 제약 조건 설계
