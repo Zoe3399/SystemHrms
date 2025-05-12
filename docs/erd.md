@@ -8,7 +8,6 @@
 <details>
 <summary>1. 직원(Employee)</summary>
 
-### 1. 직원(Employee)
 - **employee_id** (PK): 직원 고유 식별자
 - **name**: 직원 이름
 - **email**: 이메일
@@ -28,7 +27,6 @@
 <details>
 <summary>2. 부서(Department)</summary>
 
-### 2. 부서(Department)
 - **department_id** (PK): 부서 고유 식별자
 - **name**: 부서명
 - **parent_id** (FK, nullable): 상위 부서 참조 (자기참조)
@@ -41,7 +39,6 @@
 <details>
 <summary>3. 직위(Position)</summary>
 
-### 3. 직위(Position)
 - **position_id** (PK): 직위/직책 고유 식별자
 - **name**: 직위/직책명
 - **created_at**: 생성일시
@@ -52,7 +49,6 @@
 <details>
 <summary>4. 근태(Attendance)</summary>
 
-### 4. 근태(Attendance)
 - **attendance_id** (PK): 근태 고유 식별자
 - **employee_id** (FK): 직원 참조
 - **date**: 날짜
@@ -69,7 +65,6 @@
 <details>
 <summary>5. 휴가(Leave)</summary>
 
-### 5. 휴가(Leave)
 - **leave_id** (PK): 휴가 내역 고유 식별자
 - **employee_id** (FK): 직원 참조
 - **leave_type**: 휴가 유형 (연차, 반차, 병가 등)
@@ -86,7 +81,6 @@
 <details>
 <summary>6. 급여(Payroll)</summary>
 
-### 6. 급여(Payroll)
 - **payroll_id** (PK): 급여 고유 식별자
 - **employee_id** (FK): 직원 참조
 - **period**: 급여 기간 (YYYY-MM)
@@ -102,7 +96,6 @@
 <details>
 <summary>7. 사용자 역할(Role)</summary>
 
-### 7. 사용자 역할(Role)
 - **role_id** (PK): 역할 고유 식별자
 - **name**: 역할명 (관리자, 일반, 부서장 등)
 - **permissions**: 권한 정보 (JSON 또는 연결 테이블)
