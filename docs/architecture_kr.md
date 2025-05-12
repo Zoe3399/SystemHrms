@@ -2,15 +2,12 @@
 
 <details>
 <summary>개요 (Overview)</summary>
-
-## 개요 (Overview)
 HRMS(Human Resource Management System)는 인사 관리, 근태 관리, 급여 관리, 조직 관리 등 인사 관련 모든 업무를 효과적으로 처리하기 위한 웹 애플리케이션입니다. Django와 React를 기반으로 설계되었으며, 명확한 역할 분담과 확장성을 고려한 구조로 개발되었습니다.
 
 </details>
 <details>
 <summary>기술 스택 (Technology Stack)</summary>
 
-## 기술 스택 (Technology Stack)
 - **Backend:** Django (DRF)
 - **Frontend:** React (TypeScript, TailwindCSS)
 - **Database:** MySQL
@@ -24,7 +21,6 @@ HRMS(Human Resource Management System)는 인사 관리, 근태 관리, 급여 �
 <details>
 <summary>시스템 구성 (System Components)</summary>
 
-## 시스템 구성 (System Components)
 1. **Web Server (Django)**  
    - API 개발 및 데이터베이스와의 상호작용을 담당합니다.  
    - Django REST Framework를 사용하여 RESTful API를 제공합니다.
@@ -53,14 +49,12 @@ HRMS(Human Resource Management System)는 인사 관리, 근태 관리, 급여 �
 <details>
 <summary>아키텍처 다이어그램 (Architecture Diagram)</summary>
 
-## 아키텍처 다이어그램 (Architecture Diagram)
 (여기에 다이어그램 이미지가 삽입될 예정입니다.)
 
 </details>
 <details>
 <summary>데이터베이스 모델링 (Database Modeling)</summary>
 
-## 데이터베이스 모델링 (Database Modeling)
 - 직원 정보 (Employee)  
 - 조직 정보 (Organization)  
 - 근태 관리 (Attendance)  
@@ -71,7 +65,6 @@ HRMS(Human Resource Management System)는 인사 관리, 근태 관리, 급여 �
 <details>
 <summary>보안 및 인증 (Security & Authentication)</summary>
 
-## 보안 및 인증 (Security & Authentication)
 - JWT (JSON Web Token)를 활용한 인증 처리  
 - 모든 API 엔드포인트에 대한 인증 및 권한 검사  
 - Password encryption using Bcrypt
@@ -80,7 +73,6 @@ HRMS(Human Resource Management System)는 인사 관리, 근태 관리, 급여 �
 <details>
 <summary>확장 계획 (Future Expansion)</summary>
 
-## 확장 계획 (Future Expansion)
 - 클라우드 인프라로의 확장 (AWS, GCP, Azure 중 선택)  
 - Multi-tenancy structure application  
 - Mobile application development (React Native)
