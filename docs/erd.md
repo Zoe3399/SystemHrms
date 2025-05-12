@@ -5,6 +5,9 @@
 
 ## 주요 개체 및 속성
 
+<details>
+<summary>1. 직원(Employee)</summary>
+
 ### 1. 직원(Employee)
 - **employee_id** (PK): 직원 고유 식별자
 - **name**: 직원 이름
@@ -20,6 +23,11 @@
 - **position_id** (FK): 직위/직책 참조
 - **role_id** (FK): 사용자 역할 참조
 
+</details>
+
+<details>
+<summary>2. 부서(Department)</summary>
+
 ### 2. 부서(Department)
 - **department_id** (PK): 부서 고유 식별자
 - **name**: 부서명
@@ -28,11 +36,21 @@
 - **created_at**: 생성일시
 - **updated_at**: 수정일시
 
+</details>
+
+<details>
+<summary>3. 직위(Position)</summary>
+
 ### 3. 직위(Position)
 - **position_id** (PK): 직위/직책 고유 식별자
 - **name**: 직위/직책명
 - **created_at**: 생성일시
 - **updated_at**: 수정일시
+
+</details>
+
+<details>
+<summary>4. 근태(Attendance)</summary>
 
 ### 4. 근태(Attendance)
 - **attendance_id** (PK): 근태 고유 식별자
@@ -46,6 +64,11 @@
 - **created_at**: 생성일시
 - **updated_at**: 수정일시
 
+</details>
+
+<details>
+<summary>5. 휴가(Leave)</summary>
+
 ### 5. 휴가(Leave)
 - **leave_id** (PK): 휴가 내역 고유 식별자
 - **employee_id** (FK): 직원 참조
@@ -58,6 +81,11 @@
 - **created_at**: 생성일시
 - **updated_at**: 수정일시
 
+</details>
+
+<details>
+<summary>6. 급여(Payroll)</summary>
+
 ### 6. 급여(Payroll)
 - **payroll_id** (PK): 급여 고유 식별자
 - **employee_id** (FK): 직원 참조
@@ -69,12 +97,22 @@
 - **created_at**: 생성일시
 - **updated_at**: 수정일시
 
+</details>
+
+<details>
+<summary>7. 사용자 역할(Role)</summary>
+
 ### 7. 사용자 역할(Role)
 - **role_id** (PK): 역할 고유 식별자
 - **name**: 역할명 (관리자, 일반, 부서장 등)
 - **permissions**: 권한 정보 (JSON 또는 연결 테이블)
 - **created_at**: 생성일시
 - **updated_at**: 수정일시
+
+</details>
+
+<details>
+<summary>관계(Relationships)</summary>
 
 ## 관계(Relationships)
 - 직원(Employee) — N:1 → 부서(Department)
@@ -84,6 +122,8 @@
 - 직원(Employee) — 1:N → 휴가(Leave)
 - 직원(Employee) — 1:N → 급여(Payroll)
 - 부서(Department) — 1:N → 부서(Department) (자기참조: 상위/하위 부서)
+
+</details>
 
 ---
 
