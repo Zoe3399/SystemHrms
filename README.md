@@ -49,8 +49,13 @@ docker-compose up --build
 ```
 
 ## 🏗️ 아키텍처 문서
+※ 자세한 시스템 아키텍처는 docs/architecture_kr.md 및 docs/architecture_en.md에서 확인하세요.
 - 한국어: `docs/architecture_kr.md`
 - 영어: `docs/architecture_en.md`
+
+## 📊 DB 스키마 (Schema)
+- ERD 및 관계형 모델: `docs/erd.md`  
+  데이터베이스 구조와 엔티티 관계를 정의한 ERD 문서를 확인하세요.
 
 ## ❓ 왜 이 스택인가?
 - **Django & DRF:** 확장성 제공, 내장 관리자 및 ORM을 통한 빠른 개발
@@ -58,7 +63,7 @@ docker-compose up --build
 - **MySQL:** 트랜잭션 HR 데이터에 대한 검증된 ACID 준수
 - **Docker:** 개발 및 운영 환경 간 일관성 유지
 - **GitHub Actions:** 자동화된 CI/CD 파이프라인
-
+  
 ## 🛠 기술 스택
 - 프론트엔드: React, TypeScript, TailwindCSS
 - 백엔드: Django, Django REST Framework (DRF)

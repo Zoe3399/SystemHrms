@@ -3,6 +3,16 @@
 ## 개요
 본 문서는 HRMS 시스템의 데이터베이스 구조를 설명하는 개체-관계 다이어그램(Entity-Relationship Diagram, ERD)을 포함하며, 주요 테이블(개체)과 그 속성 및 관계를 기술합니다.
 
+| 테이블명 | 기본키 (PK) | 주요 외래키 (FK) | 관계 |
+|---|---|---|---|
+| Employee (직원) | employee_id | department_id, position_id, role_id | Employee — N:1 → Department<br>Employee — N:1 → Position<br>Employee — N:1 → Role<br>Employee — 1:N → Attendance, Leave, Payroll |
+| Department (부서) | department_id | parent_id, manager_id | Department — 1:N → Department (자기참조: 상/하위 부서)<br>Department — 1:N → Employee |
+| Position (직위/직책) | position_id | (none) | Position — 1:N → Employee |
+| Attendance (근태) | attendance_id | employee_id | Attendance — N:1 → Employee |
+| Leave (휴가) | leave_id | employee_id | Leave — N:1 → Employee |
+| Payroll (급여) | payroll_id | employee_id | Payroll — N:1 → Employee |
+| Role (사용자 역할) | role_id | (none) | Role — 1:N → Employee |
+
 ## 주요 개체 및 속성
 
 <details>
@@ -121,3 +131,4 @@
 ---
 
 본 ERD를 바탕으로 Django 모델 클래스를 정의하고, 관계를 명확히 구현합니다.
+
